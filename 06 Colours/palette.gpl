@@ -1,0 +1,60 @@
+GIMP Palette
+Name: Mikra 2026
+Columns: 5
+#
+  0  55 255	mikra-sea
+ 51  95 255	mikra-sea-80
+102 135 255	mikra-sea-60
+153 175 255	mikra-sea-40
+204 215 255	mikra-sea-20
+  0  71 187	mikra-sea-print
+ 51 108 201	mikra-sea-print-80
+102 145 214	mikra-sea-print-60
+153 181 228	mikra-sea-print-40
+204 218 241	mikra-sea-print-20
+ 10  31  92	mikra-deep-sea
+ 59  76 125	mikra-deep-sea-80
+108 121 157	mikra-deep-sea-60
+157 165 190	mikra-deep-sea-40
+206 210 222	mikra-deep-sea-20
+ 95 168  78	mikra-kelp
+127 185 113	mikra-kelp-80
+159 203 149	mikra-kelp-60
+191 220 184	mikra-kelp-40
+223 238 220	mikra-kelp-20
+212  85  26	mikra-salmon-deep
+221 119  72	mikra-salmon-deep-80
+229 153 118	mikra-salmon-deep-60
+238 187 163	mikra-salmon-deep-40
+246 221 209	mikra-salmon-deep-20
+245 248 248	mikra-ice
+247 249 249	mikra-ice-80
+249 251 251	mikra-ice-60
+251 252 252	mikra-ice-40
+253 254 254	mikra-ice-20
+199 221 219	mikra-mist
+210 228 226	mikra-mist-80
+221 235 233	mikra-mist-60
+233 241 241	mikra-mist-40
+244 248 248	mikra-mist-20
+176 199 225	mikra-sky
+192 210 231	mikra-sky-80
+208 221 237	mikra-sky-60
+223 233 243	mikra-sky-40
+239 244 249	mikra-sky-20
+140 140 157	mikra-rock
+163 163 177	mikra-rock-80
+186 186 196	mikra-rock-60
+209 209 216	mikra-rock-40
+232 232 235	mikra-rock-20
+ 31  36  48	mikra-rock-dark
+ 76  80  89	mikra-rock-dark-80
+121 124 131	mikra-rock-dark-60
+165 167 172	mikra-rock-dark-40
+210 211 214	mikra-rock-dark-20
+  0   0   0	mikra-lava
+ 51  51  51	mikra-lava-80
+102 102 102	mikra-lava-60
+153 153 153	mikra-lava-40
+204 204 204	mikra-lava-20
+255 255 255	mikra-white
