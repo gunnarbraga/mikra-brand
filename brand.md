@@ -20,7 +20,7 @@ Opinber útgáfa 2026-11-12. Vefur: https://brand.mikra.is · skrár: sama sló�
 | Sea | #0037FF | 0 55 255 | 100/70/0/0 | 2728 C | Merkið og hnappar: lógó á hvítu, hnappar, línur, ikon. Ekki yfirborðslitur. Skjágildi. |
 | Sea Print | #0047BB | 0 71 187 | 100/70/0/0 | 2728 C | Prentforskrift fyrir Sea: Pantone 2728 C fyrir bíla, skilti, bás og allt prentað í lit. Ekki sérstakt lógó, sama skrá. Yfirborð aðeins þar sem það er tilgreint sérstaklega. |
 | Deep Sea | #0A1F5C | 10 31 92 | 89/66/0/64 (reiknað) | staðfesta | Yfirborðsliturinn: titilglærur, hero, gaflar, borðar, kaflaskil, skjalahausar. Á Deep Sea er allt annað hvítt. |
-| Kelp | #5FA84E | 95 168 78 | 43/0/54/34 (reiknað) | staðfesta | Í lagi, sjálfbærni, matvælaöryggi, gröf. Ber hvítan texta. |
+| Kelp | #5FA84E | 95 168 78 | 43/0/54/34 (reiknað) | staðfesta | Í lagi, staða, gröf. Merkimiðar og ljós, ekki bakflötur fyrir texta: hvítt á Kelp aðeins í stuttum, feitum merkimiðum. |
 | Salmon Deep | #D4551A | 212 85 26 | 0/60/88/17 (reiknað) | staðfesta | Athygli, nýtt, viðvörun, einn áherslupunktur. Ber hvítan texta. |
 | Ice | #F5F8F8 | 245 248 248 | 1/0/0/3 (reiknað) | – | Aðalbakgrunnur. |
 | Mist | #C7DDDB | 199 221 219 | 10/0/1/13 (reiknað) | – | Mjúkir fletir, skil. |
@@ -179,7 +179,9 @@ Um þriðjungur blár yfir heila kynningu eða síðu, nær allt Deep Sea. Sea s
 
 #### Reglur
 
-- ✓ Hvítur texti aðeins á Sea, Sea Print, Deep Sea, Rock Dark, Kelp og Salmon Deep.
+- ✓ Hvítur texti aðeins á Sea, Sea Print, Deep Sea og Rock Dark.
+
+- ✕ Kelp og Salmon Deep eru aldrei bakflötur fyrir texta. Þeir eru merkimiðar, ljós og línur; hvítt á þeim aðeins í stuttum feitum merkimiðum (CE, Í LAGI). Lengri texti í þeim lit stendur á hvítu eða Rock Dark.
 
 - ✕ Enginn gradient. Dökkir fletir eru Deep Sea, með eða án vatnsmerkis.
 

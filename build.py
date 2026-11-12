@@ -25,7 +25,7 @@ PALETTE = {
     "sea":        ("#0037FF", "Mikra-blár",  "blues",   "2728 C",       (100, 70, 0, 0),  "Merkið og hnappar: lógó á hvítu, hnappar, línur, ikon. Ekki yfirborðslitur. Skjágildi."),
     "sea-print":  ("#0047BB", "Prentblár",   "blues",   "2728 C",       (100, 70, 0, 0),  "Prentforskrift fyrir Sea: Pantone 2728 C fyrir bíla, skilti, bás og allt prentað í lit. Ekki sérstakt lógó, sama skrá. Yfirborð aðeins þar sem það er tilgreint sérstaklega."),
     "deep-sea":   ("#0A1F5C", "Dökkblár",    "blues",   "staðfesta",    None,             "Yfirborðsliturinn: titilglærur, hero, gaflar, borðar, kaflaskil, skjalahausar. Á Deep Sea er allt annað hvítt."),
-    "kelp":       ("#5FA84E", "Grænn",       "signal",  "staðfesta",    None,             "Í lagi, sjálfbærni, matvælaöryggi, gröf. Ber hvítan texta."),
+    "kelp":       ("#5FA84E", "Grænn",       "signal",  "staðfesta",    None,             "Í lagi, staða, gröf. Merkimiðar og ljós, ekki bakflötur fyrir texta: hvítt á Kelp aðeins í stuttum, feitum merkimiðum."),
     "salmon-deep":("#D4551A", "Rauðbrúnn",   "signal",  "staðfesta",    None,             "Athygli, nýtt, viðvörun, einn áherslupunktur. Ber hvítan texta."),
     "ice":        ("#F5F8F8", "Ljósgrár",    "neutral", "",             None,             "Aðalbakgrunnur."),
     "mist":       ("#C7DDDB", "Mistur",      "neutral", "",             None,             "Mjúkir fletir, skil."),
