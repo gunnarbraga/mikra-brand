@@ -33,8 +33,8 @@ Plus Jakarta Sans í öllu, Ubuntu aðeins í merkinu. Sea er merkið og hnappar
 
 ## Git og brand.mikra.is
 
-Uppsprettan er git (GitHub). Það sem er í repo: `build.py`, `brandsite.py`, `09 Source`, `10 Daemi`, README og `.github`.
-Allt annað (01–08, Downloads, index.html, public/, brand.md) er byggt og er í `.gitignore`.
+Uppsprettan er git. Í repo-inu er bæði uppsprettan (`build.py`, `brandsite.py`, `09 Source`, `10 Daemi`) og það sem byggist úr henni (01–08, Downloads, `index.html`, `brand.md`), svo klón er heill pakki án þess að keyra neitt.
+Reglan: aldrei breyta byggðu skránum beint. Breyta í `09 Source` eða `build.py`, keyra `python build.py`, committa hvort tveggja. `public/` og `Vinnuskjal.html` (innanhúss) eru ekki í git.
 
 `build.py` skrifar þrjár birtingar úr sömu uppsprettu:
 
