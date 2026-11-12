@@ -1,0 +1,15 @@
+# Mikra brand
+
+> Opinberar vörumerkjareglur Mikra ehf.: lógó, litir, letur, bylgjur, bakgrunnar. Fylgja þeim í öllu efni fyrir Mikra.
+
+- [Reglurnar, allt skjalið](https://brand.mikra.is/brand.md): lógóreglan, litir með HEX/RGB/CMYK/Pantone, letur, bakgrunnar.
+- [palette.json](https://brand.mikra.is/06%20Colours/palette.json): litir og tintar, vélalesanlegt.
+- [palette.css](https://brand.mikra.is/06%20Colours/palette.css): CSS-breytur --mikra-*.
+- [Vefsíðan](https://brand.mikra.is/): sama efni með myndum og niðurhali.
+
+## Kjarnareglur
+
+- Lógó: hvítt á lituðum grunni, Sea #0037FF á hvítum. Ekkert annað.
+- Sea er merki og hnappar, ekki yfirborð. Deep Sea #0A1F5C er yfirborðsliturinn.
+- Plus Jakarta Sans í öllu, Ubuntu aðeins í lógóinu.
+- Enginn gradient. Prentblár Pantone 2728 C.

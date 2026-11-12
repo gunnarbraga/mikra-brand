@@ -1,0 +1,438 @@
+<title>Mikra Brand Guide</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+<style>
+/* Layout: fixed left nav (Hoseth-style), one long scrolling page of sections with a Deep Sea hero band. Single committed light look. */
+:root{
+  --sea:#0037FF; --sea-print:#0047BB; --deep:#0A1F5C; --kelp:#5FA84E; --salmon:#D4551A;
+  --ice:#F5F8F8; --mist:#C7DDDB; --sky:#B0C7E1; --rock:#8C8C9D; --rockd:#1F2430; --lava:#000;
+  --bg:#FFFFFF; --fg:var(--rockd); --muted:#5E6472; --line:#E3E7EC;
+  --font:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:15px;line-height:1.6}
+a{color:var(--sea)}
+.wrap{display:grid;grid-template-columns:220px 1fr;min-height:100vh}
+nav{position:sticky;top:0;align-self:start;height:100vh;padding:28px 20px;border-right:1px solid var(--line);background:var(--bg)}
+nav .brand{display:block;width:110px;margin-bottom:34px}
+nav a{display:block;color:var(--muted);text-decoration:none;font-size:14px;padding:6px 0;font-weight:500}
+nav a:hover,nav a:focus-visible{color:var(--sea);outline:none}
+nav .ver{position:absolute;bottom:24px;left:20px;font-size:11px;color:var(--rock)}
+main{min-width:0}
+section{padding-block:64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));border-bottom:1px solid var(--line)}
+.inner{max-width:1040px;margin:0 auto}
+.band{background:var(--deep);color:#fff;border-bottom:0}
+.band .inner{padding-block:40px}
+.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--sea)}
+.band .eyebrow{color:var(--sky)}
+h1{font-size:clamp(34px,5vw,56px);font-weight:600;letter-spacing:-.02em;line-height:1.05;margin:10px 0 18px;text-wrap:balance}
+h2{font-size:30px;font-weight:600;letter-spacing:-.015em;margin:6px 0 10px;text-wrap:balance}
+h3{font-size:18px;font-weight:600;margin:28px 0 8px}
+h4{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:22px 0 8px}
+p{max-width:64ch;margin:0 0 12px}
+.lead{font-size:18px;color:var(--muted);max-width:60ch}
+.band .lead{color:var(--sky)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;align-items:start}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.tile{border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#fff}
+.tile .art{display:flex;align-items:center;justify-content:center;padding:28px;min-height:150px}
+.tile .cap{padding:10px 12px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.tile .cap b{color:var(--fg);font-weight:600}
+.lg{width:200px;max-width:100%;height:auto}.tk{width:70px;height:auto}.sub{width:230px;max-width:100%;height:auto}.mk{height:100%;width:auto}.wave svg{width:100%;height:auto;display:block}
+.on-sea{background:var(--sea)}.on-deep{background:var(--deep)}.on-ice{background:var(--ice)}.on-lava{background:var(--lava)}.on-sky{background:var(--sky)}
+.rule{display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start;margin:8px 0;font-size:14px}
+.ok,.no{width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:700;margin-top:2px}
+.ok{background:var(--kelp)}.no{background:var(--salmon)}
+.sw{border-radius:6px;overflow:hidden;border:1px solid var(--line);background:#fff}
+.sw .c{height:96px;padding:10px;display:flex;align-items:flex-end;font-weight:600;font-size:14px}
+.sw .d{padding:10px 12px;font-size:12px;line-height:1.5;color:var(--muted);font-variant-numeric:tabular-nums}
+.sw .d b{display:block;color:var(--fg);font-size:13px;font-weight:600}
+.sw .d em{font-style:normal;color:var(--rock);font-size:11px}
+.bar{display:flex;height:34px;border-radius:6px;overflow:hidden;margin:12px 0 4px;font-size:11px;font-weight:600}
+.bar div{display:flex;align-items:center;justify-content:center;white-space:nowrap}
+.type-row{display:grid;grid-template-columns:150px 1fr;gap:14px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--line)}
+.type-row small{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
+.samples{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.sample{display:flex;flex-direction:column;gap:8px;min-width:0}
+.sample .lab{font-size:12px;color:var(--muted);font-weight:500}
+.sample .lab b{color:var(--fg);font-weight:600}
+.mock{border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--ice);aspect-ratio:4/3;max-width:100%;position:relative;font-size:12px}
+.mock.wide{aspect-ratio:16/9}
+.cardf{position:absolute;left:12%;top:18%;width:60%;aspect-ratio:85/55;background:#fff;border-radius:3px;box-shadow:0 6px 18px rgba(10,31,92,.18);padding:14px;display:flex;flex-direction:column;justify-content:space-between}
+.cardb{position:absolute;left:30%;top:42%;width:60%;aspect-ratio:85/55;background:var(--sea);border-radius:3px;box-shadow:0 6px 18px rgba(10,31,92,.25);display:flex;align-items:center;justify-content:center}
+.btn{display:inline-block;padding:7px 14px;border-radius:999px;font-weight:600;font-size:11px}
+.b-sea{background:var(--sea);color:#fff}.b-ghost{border:1px solid var(--sky);color:#fff}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
+code{font-family:ui-monospace,Consolas,monospace;font-size:12px;background:var(--ice);padding:1px 5px;border-radius:3px}
+.note{border-left:3px solid var(--salmon);background:#FBF1EC;padding:10px 14px;font-size:13px;border-radius:0 6px 6px 0;max-width:70ch}
+@media (max-width:820px){.wrap{grid-template-columns:1fr}nav{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:4px 16px;align-items:center;padding:14px 16px}nav .brand{margin:0 12px 0 0;width:90px}nav a{padding:4px 0}nav .ver{display:none}.type-row{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:no-preference){nav a{transition:color .15s}}
+</style>
+
+<div class="wrap">
+<nav aria-label="Kaflar">
+  <a class="brand" href="#start" aria-label="Mikra">{{blatt}}</a>
+  <a href="#start">Start</a>
+  <a href="#profill">Um prófílinn</a>
+  <a href="#logo">Lógó</a>
+  <a href="#letur">Leturgerð</a>
+  <a href="#litir">Litir</a>
+  <a href="#bakgrunnar">Bakgrunnar</a>
+  <a href="#appikon">App-ikon og kerfi</a>
+  <a href="#myndmal">Myndmál</a>
+  <a href="#notkun">Prófíllinn í notkun</a>
+  <a href="#skrar">Skrár og pakkinn</a>
+  <span class="ver">Útgáfa 1.0 · drög til samþykktar · 06.11.2026</span>
+</nav>
+
+<main>
+<section id="start" class="band">
+  <div class="inner">
+    <div class="eyebrow">Mikra ehf. · Hönnunarstaðall</div>
+    <h1>Mikra Brand Guide</h1>
+    <p class="lead">Ein heimild fyrir allt sem ber nafn Mikra: lógó, letur, litir, bakgrunnar, app-ikon, myndmál og hvernig þetta kemur saman á vef, í skjölum, á bás, bílum og byggingu. Skrárnar sjálfar eru í brandpakkanum, sjá kafla 09 og vefsíðuna <code>index.html</code> með niðurhali.</p>
+    <div style="margin-top:34px;width:min(100%,520px)">{{hvitt}}</div>
+  </div>
+</section>
+
+<section id="profill"><div class="inner">
+  <div class="eyebrow">01</div><h2>Um prófílinn</h2>
+  <div class="cols">
+    <div>
+      <p class="lead">Mikra ehf. er íslenskt hátæknifyrirtæki sem sérhæfir sig í þróun og framleiðslu á sjálfvirknilausnum fyrir matvælaiðnað, á landi og sjó um allan heim.</p>
+      <p>Hjá okkur starfar öflugur hópur starfsfólks í framleiðslu, vélhönnun, hugbúnaði og verkefnastýringu.</p>
+      <p>Verkefnin okkar eru fjölbreytt og krefjandi og markmið okkar eru ávallt að skila framúrskarandi lausnum og veita skjóta og góða þjónustu.</p>
+      <p style="margin-top:18px">Útlitið á að segja það sama og vélarnar: hreint, sterkt og nákvæmt. Blái liturinn er sjórinn og stálið, bylgjurnar í merkinu eru hreyfing hráefnis gegnum vinnsluna.</p>
+    </div>
+    <div>
+      <h4>Fjórar reglur sem allt annað hvílir á</h4>
+      <div class="rule"><span class="ok">1</span><div><b>Tveir bláir, hvor með sitt hlutverk.</b> Sea (#0037FF) er merkið og hnappar, ekki yfirborð. Deep Sea (#0A1F5C) er yfirborðsliturinn: titilglærur, gaflar, borðar, kaflaskil, vefur. Á bláum fleti eru lógó, tákn, bylgja og fyrirsagnir hvít, meginmál í Ice #F5F8F8. Sea Print (#0047BB) er prentlitur Sea og má aðeins vera yfirborð þar sem það er tilgreint sérstaklega.</div></div>
+      <div class="rule"><span class="ok">2</span><div><b>Lógóið er hvítt á lituðum grunni, Sea #0037FF á hvítum.</b> Engin þriðja útgáfa, ekki svart, ekki grátt. Hvíta lógóið er til með gegnsæjum bakgrunni. Gröftur og skurður nota DXF-geometríuna, þar er enginn litur.</div></div>
+      <div class="rule"><span class="ok">3</span><div><b>Eitt letur alls staðar.</b> Plus Jakarta Sans í öllu efni. Ubuntu lifir aðeins í lógóinu, og vörulínumerkin (MES, CorDex, Robotics, Vision) teljast hluti þess.</div></div>
+      <div class="rule"><span class="ok">4</span><div><b>Litir hafa merkingu.</b> Grænn þýðir í lagi, rauðbrúnn þýðir athygli. Aldrei skreyting.</div></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="logo"><div class="inner">
+  <div class="eyebrow">02</div><h2>Lógó</h2>
+  <p class="lead">Lógóið er tákn og orðmerki saman. Táknið má standa eitt þar sem nafnið er þegar þekkt (ikon, fatnaður, skilti á byggingu). Orðmerkið stendur aldrei eitt.</p>
+
+  <h3>Aðalútgáfur</h3>
+  <div class="grid">
+    <div class="tile"><div class="art">{{blatt}}</div><div class="cap"><b>Sea á hvítu</b><span>aðalútgáfa · #0037FF</span></div></div>
+    <div class="tile"><div class="art on-deep">{{hvitt}}</div><div class="cap"><b>Hvítt á Deep Sea</b><span>vefur, bás, glærur · gegnsær PNG</span></div></div>
+    <div class="tile"><div class="art" style="background:#1F2430">{{hvitt}}</div><div class="cap"><b>Hvítt á Rock Dark</b><span>HMI, splash-skjáir, dökkar myndir</span></div></div>
+  </div>
+  <div class="note" style="margin-top:14px"><b>Reglan í einni línu:</b> litaður grunnur → hvítt lógó. Hvítur eða Ice-grunnur → Sea #0037FF. Ekkert annað. Þetta gildir jafnt um lógó, stacked-útgáfu, tákn og vörulínumerki. Í prenti er Sea-skráin notuð óbreytt og prentara sagt: Pantone 2728 C. Sea Print #0047BB er forskrift fyrir prentarann, ekki sérstakt lógó.</div>
+
+  <h3>Ekki notað</h3>
+  <p>Lógóið var prófað í fleiri litum (svart, dökkgrátt, ljósblátt, grátt, dökkblátt) í október og nóvember 2026 og þeim <b>hafnað</b>. Þessar útgáfur eru ekki í pakkanum og ekki notaðar neins staðar. Þær eru sýndar hér svo enginn búi þær til aftur.</p>
+  <div class="grid" style="opacity:.55">
+    <div class="tile"><div class="art">{{svart}}</div><div class="cap"><b style="text-decoration:line-through">Svart</b><span>ekki notað</span></div></div>
+    <div class="tile"><div class="art">{{logo_rd}}</div><div class="cap"><b style="text-decoration:line-through">Dökkgrátt</b><span>ekki notað</span></div></div>
+    <div class="tile"><div class="art on-deep">{{logo_sky}}</div><div class="cap"><b style="text-decoration:line-through">Ljósblátt á dökku</b><span>ekki notað</span></div></div>
+    <div class="tile"><div class="art">{{logo_rock}}</div><div class="cap"><b style="text-decoration:line-through">Grátt</b><span>ekki notað</span></div></div>
+    <div class="tile"><div class="art on-sky">{{logo_deep}}</div><div class="cap"><b style="text-decoration:line-through">Dökkblátt á ljósbláu</b><span>ekki notað</span></div></div>
+  </div>
+
+  <h3>Tákn</h3>
+  <div class="grid">
+    <div class="tile"><div class="art">{{takn}}</div><div class="cap"><b>Tákn, blátt</b><span>mikra_takn_blatt</span></div></div>
+    <div class="tile"><div class="art on-deep">{{takn_h}}</div><div class="cap"><b>Tákn, hvítt</b><span>mikra_takn_hvitt</span></div></div>
+    <div class="tile"><div class="art">{{hringur}}</div><div class="cap"><b>Hringur</b><span>samfélagsmiðlar, app-ikon</span></div></div>
+    <div class="tile"><div class="art"><img src="{{stacked}}" alt="Mikra stacked logo" style="width:110px;height:auto"></div><div class="cap"><b>Stacked</b><span>app-tiles, avatar, ferkantaðir fletir</span></div></div>
+  </div>
+
+  <h3>Vörulínur</h3>
+  <p>Vöruheiti situr undir hægri enda orðmerkisins í Ubuntu Medium, grátt. Mikra-lógóið breytist aldrei, aðeins vöruorðið bætist við. Á lituðum grunni er lógóið hvítt og vöruorðið ljósblátt. Ný vörulína (OMS, Flow …) er sett í Ubuntu Medium í sömu stærð og stöðu og breytt í útlínur (paths) áður en henni er dreift.</p>
+  <div class="grid">
+    <div class="tile"><div class="art">{{cordex}}</div><div class="cap"><b>Cordex</b></div></div>
+    <div class="tile"><div class="art">{{mes}}</div><div class="cap"><b>MES</b></div></div>
+    <div class="tile"><div class="art">{{robotics}}</div><div class="cap"><b>Robotics</b></div></div>
+    <div class="tile"><div class="art">{{vision}}</div><div class="cap"><b>Vision</b></div></div>
+  </div>
+
+  <div class="cols" style="margin-top:30px">
+    <div>
+      <h4>Friðhelgað svæði og lágmarksstærð</h4>
+      <p>Auður rammi á allar hliðar sem nemur hálfri hæð orðmerkisins. <b>Skrárnar í pakkanum innihalda þetta svæði</b>, svo það er rétt að leggja skrána brún við brún að öðrum elementum. Ekki klippa það af.</p><table style="margin-bottom:14px"><thead><tr><th>Útgáfa</th><th>Lágmarksbreidd</th></tr></thead><tbody><tr><td>Lógó</td><td>120 px á skjá · 30 mm í prenti</td></tr><tr><td>Stacked</td><td>64 px · 16 mm</td></tr><tr><td>Tákn</td><td>16 px · 5 mm</td></tr></tbody></table><p style="font-size:13px;color:var(--muted)">Undir þessum stærðum lokast bylgjurnar. Nota táknið frekar en að minnka lógóið.</p>
+      <div style="display:inline-block;padding:28px;border:1px dashed var(--salmon);border-radius:4px;position:relative">
+        <div style="width:180px">{{blatt}}</div>
+        <span style="position:absolute;top:4px;right:8px;font-size:10px;color:var(--salmon)">skráarbrún = friðhelgað svæði</span>
+      </div>
+    </div>
+    <div>
+      <h4>Má og má ekki</h4>
+      <div class="rule"><span class="ok">✓</span><div>Nota aðeins skrárnar úr brandpakkanum (index.html), óbreyttar.</div></div>
+      <div class="rule"><span class="ok">✓</span><div>Litaður grunnur → hvítt. Hvítur grunnur → Sea #0037FF. Ekkert annað.</div></div>
+      <div class="rule"><span class="ok">✓</span><div>Á ljósmynd: hvítt lógó á dökkum, rólegum fleti í myndinni.</div></div>
+      <div class="rule"><span class="no">✕</span><div>Ekki teygja, halla, snúa eða breyta hlutföllum.</div></div>
+      <div class="rule"><span class="no">✕</span><div>Ekki skugga, útlínur, gradient eða glans.</div></div>
+      <div class="rule"><span class="no">✕</span><div>Ekki blátt lógó á lituðum fleti, hvorki dökkbláum, gráum né ljósbláum. Þar er lógóið hvítt.</div></div>
+      <div class="rule"><span class="no">✕</span><div>Ekki endurslá orðmerkið í Ubuntu. Orðmerkið er teikning, ekki texti.</div></div>
+      <div class="rule"><span class="no">✕</span><div>Ekki gamla navy-lógóið (#001477). Það er úrelt.</div></div>
+      <div class="rule"><span class="no">✕</span><div>Ekki blátt lógó ofan á ljósmynd með óróa í bakgrunni. Nota hvítt á dökkum fleti.</div></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="letur"><div class="inner">
+  <div class="eyebrow">03</div><h2>Leturgerð</h2>
+  <p class="lead">Plus Jakarta Sans í öllu efni: vef, markaðsefni, Word, PowerPoint, skiltum. Ókeypis (Google Fonts, SIL OFL). Ubuntu er aðeins letrið í lógóinu og er aldrei notað sem texti.</p>
+  <div class="type-row"><small>Fyrirsögn 1 · 600 · 48/52</small><div style="font-size:44px;font-weight:600;letter-spacing:-.02em;line-height:1.1">Over 50 years of quality and automation.</div></div>
+  <div class="type-row"><small>Fyrirsögn 2 · 600 · 30/36</small><div style="font-size:30px;font-weight:600;letter-spacing:-.015em">Lifting &amp; Tipping</div></div>
+  <div class="type-row"><small>Fyrirsögn 3 · 600 · 18/26</small><div style="font-size:18px;font-weight:600">Sjálfvirk lyfti- og sturtubúnaður fyrir kör</div></div>
+  <div class="type-row"><small>Yfirskrift · 600 · 11 · +14%</small><div class="eyebrow">Micro + Klaki = Mikra</div></div>
+  <div class="type-row"><small>Meginmál · 400 · 15/24</small><div style="max-width:64ch">Mikra was formed through the merger of Micro and Klaki, bringing together decades of experience in seafood processing, mechanical manufacturing and industrial automation.</div></div>
+  <div class="type-row"><small>Smátexti · 400 · 12/18</small><div style="font-size:12px;color:var(--muted)">Myndatextar, töflur, neðanmálsgreinar. Aldrei undir 11 px á skjá eða 7 pt í prenti.</div></div>
+  <div class="type-row" style="border:0"><small>Tölur · tabular</small><div style="font-variant-numeric:tabular-nums;font-size:22px;font-weight:500">35,8 m² · 417 €/m² · 9.405.000 kr.</div></div>
+  <div class="cols" style="margin-top:24px">
+    <div><h4>Reglur</h4>
+      <div class="rule"><span class="ok">✓</span><div>Þyngdir: 300 Light, 400 Regular, 500 Medium, 600 SemiBold. 700 Bold aðeins í undantekningum.</div></div>
+      <div class="rule"><span class="ok">✓</span><div>Fyrirsagnir vinstrijafnaðar, þéttari stafabil (−1,5 til −2 %).</div></div>
+      <div class="rule"><span class="ok">✓</span><div>Línulengd 55–70 stafir í meginmáli.</div></div>
+      <div class="rule"><span class="no">✕</span><div>Ekki hástafa fyrirsagnir nema í yfirskriftum (eyebrow).</div></div>
+      <div class="rule"><span class="no">✕</span><div>Ekki Arial, Calibri eða Ubuntu í texta. Office-varaletur þar sem ekki er hægt að setja upp: Segoe UI.</div></div>
+      <div class="rule"><span class="no">✕</span><div><b>Dark mode:</b> ekki Light 300 og ekki hreinhvítur texti á dökkum fleti. Regular 400 að lágmarki, texti í ljósgráu (#F5F8F8), línubil 1.6. Prófun í nóvember 2026 sýndi að letrið verður óþægilegt í dark mode ef þessu er sleppt.</div></div>
+    </div>
+    <div><h4>Uppsetning</h4>
+      <p>Vefur: <code>fonts.googleapis.com/css2?family=Plus+Jakarta+Sans</code><br>Office: letrið sett upp á allar vinnustöðvar í gegnum Intune (IT). Word/PowerPoint-sniðmát uppfærð í kjölfarið.</p>
+      <div class="note">Þar til letrið er komið á allar tölvur halda CE- og Word-sniðmátin Ubuntu. Skiptið ekki sniðmátum fyrr en IT staðfestir uppsetningu, annars fellur Word í Arial hjá þeim sem vantar letrið.</div>
+    </div>
+  </div>
+</div></section>
+
+<section id="litir"><div class="inner">
+  <div class="eyebrow">04</div><h2>Litir</h2>
+  <p class="lead">Litirnir halda upprunalegu nöfnunum úr brandpakkanum: Sea, Sea Print, Deep Sea, Kelp, Salmon Deep, Ice, Mist, Sky, Rock, Rock Dark, Lava. Íslensku lýsingarorðin í þessu skjali (Mikra-blár, dökkblár …) vísa í þau. Sea er andlit Mikra en sést í litlu magni. Stóru fletirnir eru Deep Sea, hvítir og Ice. Hver litur er til í 80/60/40/20 % tintum í pakkanum.</p>
+
+  <h3>Bláa fjölskyldan</h3>
+  <div class="grid">
+    <div class="sw"><div class="c" style="background:var(--sea);color:#fff">Sea</div><div class="d"><b>#0037FF</b>RGB 0 55 255<br>Pantone 2728 C · CMYK 100 70 0 0<br><em>Merkið og hnappar: lógó, hnappar, línur, ikon. Ekki yfirborðslitur, of harður á stórum fleti.</em></div></div>
+    <div class="sw"><div class="c" style="background:var(--sea-print);color:#fff">Sea Print</div><div class="d"><b>#0047BB</b>RGB 0 71 187<br>≈ Pantone 2728 C í prenti<br><em>Prentforskrift fyrir Sea: bílar, skilti, bás, prentað efni. Ekki sérstakt lógó, Sea-skráin er notuð og prentara sagt Pantone 2728 C.</em></div></div>
+    <div class="sw"><div class="c" style="background:var(--deep);color:#fff">Deep Sea</div><div class="d"><b>#0A1F5C</b>RGB 10 31 92<br>Pantone/CMYK: stilla með Garðari<br><em>Dökkur grunnur þegar Sea er of hávær: lengri texti, kaflaskil, vefur, Word-hausar.</em></div></div>
+  </div>
+
+  <h3>Merkingarlitir</h3>
+  <div class="grid">
+    <div class="sw"><div class="c" style="background:var(--kelp);color:#fff">Kelp</div><div class="d"><b>#5FA84E</b>RGB 95 168 78<br>Pantone/CMYK: stilla með Garðari<br><em>Í lagi · sjálfbærni · matvælaöryggi · gröf. Ber hvítan texta.</em></div></div>
+    <div class="sw"><div class="c" style="background:var(--salmon);color:#fff">Salmon Deep</div><div class="d"><b>#D4551A</b>RGB 212 85 26<br>Pantone/CMYK: stilla með Garðari<br><em>Athygli · nýtt · viðvörun · einn áherslupunktur. Ber hvítan texta.</em></div></div>
+  </div>
+
+  <h3>Hlutlausir</h3>
+  <div class="grid">
+    <div class="sw"><div class="c" style="background:var(--ice);border-bottom:1px solid var(--line)">Ice</div><div class="d"><b>#F5F8F8</b>RGB 245 248 248<br><em>Aðalbakgrunnur á vef og í skjölum.</em></div></div>
+    <div class="sw"><div class="c" style="background:var(--mist)">Mist</div><div class="d"><b>#C7DDDB</b>RGB 199 221 219<br><em>Mjúkir fletir, skil, bakgrunnur á myndum.</em></div></div>
+    <div class="sw"><div class="c" style="background:var(--sky)">Sky</div><div class="d"><b>#B0C7E1</b>RGB 176 199 225<br><em>Töflur, tög, aukatexti á Deep Sea.</em></div></div>
+    <div class="sw"><div class="c" style="background:var(--rock);color:#fff">Rock</div><div class="d"><b>#8C8C9D</b>RGB 140 140 157<br><em>Aukatexti, ikon, vörulínunöfn í lógói.</em></div></div>
+    <div class="sw"><div class="c" style="background:var(--rockd);color:#fff">Rock Dark</div><div class="d"><b>#1F2430</b>RGB 31 36 48<br><em>Meginmálstexti í stað hreins svarts.</em></div></div>
+    <div class="sw"><div class="c" style="background:var(--lava);color:#fff">Lava</div><div class="d"><b>#000000</b>RGB 0 0 0<br><em>Texti í prenti þar sem Rock Dark dugar ekki. Aldrei á lógóið.</em></div></div>
+  </div>
+
+  <h3>Hlutföll</h3>
+  <div class="bar"><div style="flex:60;background:#fff;color:var(--muted);border:1px solid var(--line)">60 % hvítt / Ice</div><div style="flex:27;background:var(--deep);color:#fff">Deep Sea</div><div style="flex:9;background:var(--sea);color:#fff">Sea</div><div style="flex:2;background:var(--kelp)"></div><div style="flex:2;background:var(--salmon)"></div></div>
+  <p style="font-size:13px;color:var(--muted)">Um þriðjungur blár yfir heila kynningu eða síðu, nær allt Deep Sea. Sea sést í litlu magni: lógó, hnappar, línur. Kelp og Salmon Deep samanlagt undir 5 %.</p>
+
+  <div class="cols" style="margin-top:20px">
+    <div><h4>Reglur</h4>
+      <div class="rule"><span class="ok">✓</span><div>Hvítur texti aðeins á Sea, Sea Print, Deep Sea, Rock Dark, Kelp og Salmon Deep.</div></div>
+      <div class="rule"><span class="no">✕</span><div>Enginn gradient. Dökkir fletir eru Deep Sea, með eða án vatnsmerkis.</div></div>
+      <div class="rule"><span class="ok">✓</span><div>Sama merking alls staðar: grænn = í lagi, rauðbrúnn = athygli.</div></div>
+      <div class="rule"><span class="no">✕</span><div>Sea er ekki yfirborð. Engar Sea-titilglærur, gaflar, borðar eða hausar. Sea er lógó, hnappar, línur og ikon á hvítu eða Ice.</div></div>
+      <div class="rule"><span class="ok">✓</span><div>Deep Sea er yfirborðsliturinn: titilglærur, kaflaskil, gaflar, borðar, hero, Word-hausar. Ofan á Deep Sea er allt hvítt: lógó, texti, vatnsmerki. Sea-hnappur má standa á Deep Sea.</div></div>
+      <div class="rule"><span class="ok">?</span><div>Sea Print sem yfirborð í prenti (bíll, skilti, bás) aðeins þar sem það er tilgreint sérstaklega. Opið atriði, sjá 09.</div></div>
+      <div class="rule"><span class="no">✕</span><div>Lógó á lituðum grunni er alltaf hvítt. Sea-lógó á Deep Sea eða Rock Dark er undir 3:1 kontrast og er ekki notað, og Sky-lógó er ekki notað heldur.</div></div>
+      <div class="rule"><span class="no">✕</span><div>Ekki Moss #9CE763 eða Salmon #FE7833 úr eldra skjali. Þeir eru teknir út.</div></div>
+      <div class="rule"><span class="no">✕</span><div>Ekki svartur (#000) texti á stórum flötum. Nota Rock Dark.</div></div>
+    </div>
+    <div><h4>Prent og skjár</h4>
+      <p>Skjár notar hex-gildin. Allt sem er prentað, skorið eða sprautað (bílar, skilti, bás, fatnaður) notar Pantone 2728 C / Sea Print. Prentari fær aldrei #0037FF sem forskrift.</p>
+      <div class="note">Pantone- og CMYK-gildi fyrir Deep Sea, Kelp og Salmon Deep eru ekki fastsett. Garðar stillir þau áður en skilti og bílamerkingar eru pöntuð.</div>
+    </div>
+  </div>
+</div></section>
+
+<section id="bakgrunnar"><div class="inner">
+  <div class="eyebrow">05</div><h2>Bakgrunnar</h2>
+  <p class="lead">Þrír 16:9 fletir með vatnsmerki (Deep Sea, Ice, Rock Dark) auk heillitaðra. Enginn Sea-flötur. Enginn gradient. Tilbúnir sem SVG (breytanlegir) og PNG 1920×1080 og 3840×2160 í <code>07 Backgrounds</code>. Þetta eru fletirnir sem glærur, hero-kaflar, bás og splash-skjáir nota, ekkert annað er búið til á staðnum.</p>
+  <div class="ref" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+    <figure><img src="{{bg_deep}}" alt="Dökkblár með vatnsmerki"><figcaption><b>Deep Sea með vatnsmerki.</b> Titilglæra (dökk), kaflaskil, hero, lokamynd í vídjói.</figcaption></figure>
+    <figure><img src="{{bg_ice}}" alt="Ljósgrár með vatnsmerki"><figcaption><b>Ice með vatnsmerki.</b> Titilglæra (ljós), skjalaforsíður, hliðarveggir á bás.</figcaption></figure>
+    <figure><img src="{{bg_rock}}" alt="Dökkgrár með vatnsmerki"><figcaption><b>Rock Dark með vatnsmerki.</b> Splash-skjáir í hugbúnaði, HMI-biðskjár.</figcaption></figure>
+  </div>
+  <div class="cols" style="margin-top:20px">
+    <div><h4>Vatnsmerkið</h4>
+      <div class="rule"><span class="ok">✓</span><div>Táknið í 135 % af hæð flatarins, skorið af hægri brún.</div></div>
+      <div class="rule"><span class="ok">✓</span><div>8 % hvítt á dökkum fleti, 35 % ljósblátt á ljósgráum.</div></div>
+      <div class="rule"><span class="ok">✓</span><div>Það er áferð, ekki lógó. Lógóið sjálft stendur alltaf sér á fletinum.</div></div>
+    </div>
+    <div><h4>Má ekki</h4>
+      <div class="rule"><span class="no">✕</span><div>Ekki setja vatnsmerkið bak við lógóið eða bak við meginmálstexta.</div></div>
+      <div class="rule"><span class="no">✕</span><div>Ekki minnka það þar til það lítur út eins og annað lógó.</div></div>
+      <div class="rule"><span class="no">✕</span><div>Enginn gradient, hvorki á glærum, vef né bás. Prófaður í nóvember 2026 og hafnað.</div></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="appikon"><div class="inner">
+  <div class="eyebrow">06</div><h2>App-ikon og kerfi</h2>
+  <p class="lead">Mikra rekur fleiri en eitt hugbúnaðarkerfi (OMS, OMS Sandbox, Flow HMI …). Þau eru aðgreind með <b>lit á ikoninu</b>, ekki með nýju merki. Þrjú litasett, nefnd eftir lit en ekki kerfi, svo sett geti flust milli vara.</p>
+  <style>.icons{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.icons .tile .art{gap:16px;background:#fff}.icons img{width:84px;height:84px;border-radius:18px;box-shadow:0 2px 8px rgba(10,31,92,.12)}</style>
+  <div class="icons">
+    <div class="tile"><div class="art"><img src="{{ic_gen_sy}}" alt="mikra-general tákn"><img src="{{ic_gen_st}}" alt="mikra-general stacked"></div><div class="cap"><b>mikra-general</b><span>Mikra-blátt / hvítt</span></div></div>
+    <div class="tile"><div class="art"><img src="{{ic_dark_sy}}" alt="mikra-dark tákn"><img src="{{ic_dark_st}}" alt="mikra-dark stacked"></div><div class="cap"><b>mikra-dark</b><span>dökkgrátt / ljósgrátt</span></div></div>
+    <div class="tile"><div class="art"><img src="{{ic_gray_sy}}" alt="mikra-gray tákn"><img src="{{ic_gray_st}}" alt="mikra-gray stacked"></div><div class="cap"><b>mikra-gray</b><span>grátt / hvítt</span></div></div>
+  </div>
+  <div class="cols" style="margin-top:20px">
+    <div><h4>Úthlutun kerfa</h4>
+      <table><thead><tr><th>Sett</th><th>Kerfi</th><th>Af hverju</th></tr></thead><tbody>
+      <tr><td>mikra-general</td><td>Mikra Flow HMI og hvert nýtt kerfi sem hefur ekki eigin lit</td><td>Vörumerkislitur, sjálfgefið fyrir allt nýtt.</td></tr>
+      <tr><td>mikra-dark</td><td>Mikra OMS (framleiðsla)</td><td>Passar við núverandi OMS-ikon og dökkt viðmót.</td></tr>
+      <tr><td>mikra-gray</td><td>Mikra OMS Sandbox og öll prófunarumhverfi</td><td>Sést strax að þetta er „ekki alvöru“.</td></tr>
+      </tbody></table>
+      <p style="font-size:13px;color:var(--muted);margin-top:10px">Nýtt kerfi fær mikra-general. Nýr litur er aðeins bættur við ef kerfi þarf að vera aðgreinanlegt við hlið annars á sama skjá, og þá úr litapallettunni.</p>
+    </div>
+    <div><h4>Stíll eftir stærð</h4>
+      <div class="rule"><span class="ok">✓</span><div><b>Tákn</b> (symbol) í litlum stærðum: favicon, vafraflipi, taskbar. Undir 48 px verður stafatexti að klessu, táknið ekki.</div></div>
+      <div class="rule"><span class="ok">✓</span><div><b>Stacked</b> í stórum flísum: Microsoft My Apps (Entra), PWA-heimaskjár.</div></div>
+      <div class="rule"><span class="ok">✓</span><div>Hvert stílmöppusett inniheldur <code>tile.svg</code>, <code>favicon.ico</code> (16/32/48/64), PNG 16–512 (PWA/Quasar-nöfn), <code>app-icon.png</code> 256, <code>myapps-215x215.png</code> (Entra, undir 100 KB) og TwinCAT HMI launcher-stærðir 36–192.</div></div>
+      <div class="rule"><span class="ok">✓</span><div>Ferkantaðar útgáfur án rúnnaðra horna liggja við hlið stílmappanna fyrir kerfi sem rúnna hornin sjálf.</div></div>
+      <div class="rule"><span class="no">✕</span><div>Ekki búa til ikon á staðnum. Vantar stærð: keyra <code>build.py</code> í pakkanum.</div></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="myndmal"><div class="inner">
+  <div class="eyebrow">07</div><h2>Myndmál</h2>
+  <div class="cols">
+    <div>
+      <p class="lead">Ljósmyndir sýna vélarnar í vinnu, í raunverulegu umhverfi, með fólki þar sem það á við. Ryðfrítt stál, vatn, hráefni, hreyfing.</p>
+      <h4>Ljósmyndir</h4>
+      <div class="rule"><span class="ok">✓</span><div>Kaldur tónn, blátt eða hlutlaust ljós. Stál og vatn fá að glansa.</div></div>
+      <div class="rule"><span class="ok">✓</span><div>Vélin í samhengi: lína, kör, fiskur, hendur. Ekki vél á hvítum bakgrunni nema í vörulista.</div></div>
+      <div class="rule"><span class="ok">✓</span><div>Starfsfólk í alvöru vinnufatnaði með réttan öryggisbúnað. Engar sviðsettar handabönd.</div></div>
+      <div class="rule"><span class="ok">✓</span><div>Dökkur flötur í myndinni þar sem hvítt lógó eða texti á að sitja.</div></div>
+      <div class="rule"><span class="no">✕</span><div>Ekki hlýir Instagram-filterar, ekki stock-myndir af „verksmiðju“ sem er ekki okkar.</div></div>
+      <div class="rule"><span class="no">✕</span><div>Ekki AI-myndir af vélum eða fólki í ytra efni.</div></div>
+    </div>
+    <div>
+      <h4>Renderingar</h4>
+      <p>3D-renderingar af vélum nota ljósgráan eða Ice-bakgrunn, mjúkan skugga, stál í réttum lit. Mikra-blár má koma fram í einum smáhlut (stjórnskápur, merking) en ekki lita alla vélina.</p>
+      <h4>Ikon og línuteikningar</h4>
+      <p>Ein línuþykkt (1,5 px á 24 px grunni), ávalir endar, Mikra-blár eða dökkgrár. Engar fylltar ikon-fjölskyldur í bland við línuikon.</p>
+      <h4>Bylgjan</h4>
+      <p>Bylgjan úr tákninu er aðalgrafíska elementið, í tveimur gerðum: <b>stór og skorin</b> af brún flatar (bíll, bás, hero) og <b>vatnsmerki</b> í lágum kontrast (sjá kafla 05, Bakgrunnar). Sama litaregla og lógóið: hvít á lituðum grunni, blá á hvítum eða ljósgráum.</p>
+      <div style="margin-top:12px;height:150px;background:var(--deep);border-radius:6px;overflow:hidden;position:relative">
+        <div class="wave" style="position:absolute;right:-6%;top:-30%;width:60%;opacity:.95">{{takn_h}}</div>
+        <div style="position:absolute;left:18px;bottom:14px;color:#fff;font-weight:600;font-size:16px">Bylgjan sem grafískt element</div>
+      </div>
+      <div style="margin-top:10px;height:150px;background:var(--ice);border:1px solid var(--line);border-radius:6px;overflow:hidden;position:relative">
+        <div class="wave" style="position:absolute;right:-6%;top:-30%;width:60%;opacity:.22">{{takn}}</div>
+        <div style="position:absolute;left:18px;bottom:14px;color:var(--fg);font-weight:600;font-size:16px">Lágkontrast á ljósgráu</div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section id="notkun"><div class="inner">
+  <div class="eyebrow">08</div><h2>Prófíllinn í notkun</h2>
+  <p class="lead">Svona lítur þetta út þegar reglurnar koma saman: hús, bíll, bás, fatnaður, skjöl, vefur. Eitt dæmi um hvert, ekki forskrift. Útfærslur, tilboð og valkostir eru í vinnuskjalinu, ekki hér.</p>
+  <div class="samples">
+
+<div class="sample"><div class="lab"><b>Bygging og fánar</b> · Einhella 9</div>
+      <img src="{{fanar}}" alt="Mikra-húsið með fánum" style="width:100%;height:auto;border:1px solid var(--line);border-radius:6px">
+      <div style="font-size:12px;color:var(--muted)">Hvítt lógó á húsi, fánar í Sea með hvítu lógói. Fáni er merkið á dúk, ekki flötur.</div></div>
+
+    <div class="sample"><div class="lab"><b>Þjónustubíll</b> · Toyota Proace City</div>
+      <img src="{{car_side}}" alt="Bílamerking, hliðar" style="width:100%;height:auto;border:1px solid var(--line);border-radius:6px">
+      <div style="font-size:12px;color:var(--muted)">Hvítur grunnur, blátt afturstykki, stór bylgja yfir hlið og afturhurð. Tagline: Vinnslutækni · Sjálfvirkni · Þjónusta.</div></div>
+
+    <div class="sample"><div class="lab"><b>Sýningarbás</b> · samstarfsbás</div>
+      <img src="{{booth}}" alt="Sýningarbás, 3D-tillaga" style="width:100%;height:auto;border:1px solid var(--line);border-radius:6px">
+      <div style="font-size:12px;color:var(--muted)">Deep Sea-gaflar með hvítu lógói ramma inn bakvegg með ljósmynd og vinnsluflæði. Mikra á báða enda, samstarfsaðilar inni í flæðinu.</div></div>
+
+    <div class="sample"><div class="lab"><b>Fatnaður</b> · hvítt lógó á brjósti</div>
+      <img src="{{tee}}" alt="Bolur með Mikra-lógói" style="width:100%;height:auto;border:1px solid var(--line);border-radius:6px">
+      <div style="font-size:12px;color:var(--muted)">Lógó vinstra megin á brjósti, 8–9 cm breitt. Bakhlið auð eða tákn eitt milli herðablaða.</div></div>
+
+    <div class="sample"><div class="lab"><b>Word-skjal</b> · haus og kaflar í Deep Sea</div>
+      <div class="mock" style="background:#fff;padding:16px 18px">
+        <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:8px"><span style="font-size:9px;color:var(--muted)">Mikra ehf. · Technical documentation</span><div style="height:14px">{{mk_b}}</div></div>
+        <div style="background:var(--deep);color:#fff;font-weight:600;padding:6px 10px;margin:12px 0 10px;font-size:12px">User Manual &amp; CE Technical Documentation</div>
+        <div style="font-weight:600;font-size:11px;margin-bottom:4px;color:var(--deep)">1. Scope</div>
+        <div style="color:var(--muted);font-size:9.5px;line-height:1.5">This manual covers installation, operation and maintenance of the Lifting &amp; Tipping unit. Read before use.</div>
+        <div style="font-weight:600;font-size:11px;margin:8px 0 4px;color:var(--deep)">2. Safety</div>
+        <div style="color:var(--muted);font-size:9.5px;line-height:1.5">Only trained personnel may operate the machine.</div>
+        <div style="margin-top:10px;display:flex;gap:6px"><span style="background:var(--kelp);color:#fff;font-size:8px;padding:2px 6px;border-radius:3px">CE</span><span style="background:var(--salmon);color:#fff;font-size:8px;padding:2px 6px;border-radius:3px">WARNING</span></div>
+      </div></div>
+
+    <div class="sample"><div class="lab"><b>PowerPoint</b> · titilglæra</div>
+      <div class="mock wide" style="background:var(--deep);padding:20px;color:#fff">
+        <div style="height:16px">{{mk_w}}</div>
+        <div style="position:absolute;left:20px;bottom:22px;max-width:70%"><div class="eyebrow" style="color:var(--sky)">Seafood Expo Global 2027</div><div style="font-size:20px;font-weight:600;line-height:1.15;margin-top:4px">Lifting &amp; Tipping for high-throughput lines</div></div>
+        <div style="position:absolute;right:-20px;bottom:-40px;width:150px;opacity:.35">{{tk_w}}</div>
+      </div></div>
+
+    <div class="sample"><div class="lab"><b>Vefur</b> · hero</div>
+      <div class="mock wide" style="background:#0A1F5C;color:#fff;padding:14px 18px">
+        <div style="display:flex;justify-content:space-between;align-items:center"><div style="height:14px">{{mk_w}}</div><span class="btn b-sea" style="font-size:9px;padding:4px 10px">Get in touch →</span></div>
+        <div style="margin-top:26px;max-width:60%"><div class="eyebrow" style="color:var(--sky);font-size:9px">Micro + Klaki = Mikra</div><div style="font-size:22px;font-weight:600;line-height:1.1;margin:6px 0 8px">Over 50 years of quality and automation.</div><span class="btn b-sea" style="font-size:9px">Explore solutions</span> <span class="btn b-ghost" style="font-size:9px">Talk to our team</span></div>
+      </div></div>
+
+    <div class="sample"><div class="lab"><b>LinkedIn</b> · 1:1 færsla</div>
+      <div class="mock" style="aspect-ratio:1;background:#fff;display:grid;grid-template-rows:1fr auto">
+        <div style="background:var(--mist);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:11px">Ljósmynd: vél í vinnu</div>
+        <div style="padding:12px 14px;display:flex;justify-content:space-between;align-items:center"><div><div style="font-weight:600;font-size:12px">New install: Lifting &amp; Tipping</div><div style="font-size:10px;color:var(--kelp);font-weight:600">● Commissioned this week</div></div><div style="height:14px">{{mk_b}}</div></div>
+      </div></div>
+
+  </div>
+
+  <h3 style="margin-top:44px">Tilbúnar skrár: samfélagsmiðlar og skrifstofa</h3>
+  <p>Í <code>08 Social and office</code> eru skrár sem má hlaða beint upp eða líma inn. Ekki búa til eigin útgáfur af þessu.</p>
+  <div class="ref">
+    <figure><img src="{{li_banner}}" alt="LinkedIn-borði"><figcaption><b>LinkedIn-borði 1584×396.</b> Lógó hægra megin, vinstri þriðjungur auður fyrir prófílmyndina. SVG fylgir ef bæta á við fyrirsögn.</figcaption></figure>
+    <figure><img src="{{og}}" alt="Link preview"><figcaption><b>Link preview 1200×630.</b> Open Graph-mynd fyrir mikra.is, Teams og LinkedIn-tenglakort.</figcaption></figure>
+    <figure><div style="display:flex;gap:18px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px"><img src="{{avatar}}" alt="Avatar" style="width:90px;height:90px;border-radius:50%;border:0"><img src="{{sig}}" alt="Undirskriftarlógó" style="width:160px;height:auto;border:0"></div><figcaption><b>Avatar 400×400</b> (LinkedIn, Facebook, Teams, GitHub) og <b>undirskriftarlógó 320 px</b> (+640 @2x), með spássíu svo Outlook klippi ekki brúnir.</figcaption></figure>
+  </div>
+  <p style="font-size:13px;color:var(--muted);margin-top:10px">Einnig í möppunni: Word-haus 1200 px (Sea og hvítt, sett 35–45 mm breitt í haus), CodeTwo-undirskriftarsniðmátið og PowerPoint-sniðmát með þremur titilglærum (Deep Sea hrein, Deep Sea með vatnsmerki, Ice með vatnsmerki), kaflaskilum og efnisglærum.</p>
+
+</div></section>
+
+<section id="skrar" style="border-bottom:0"><div class="inner">
+  <div class="eyebrow">09</div><h2>Skrár og pakkinn</h2>
+  <p class="lead">Uppsprettan er git: <code>github.com/gunnarbraga/mikra-brand</code>. Þaðan byggist opinbera síðan (brand.mikra.is) sjálfkrafa við hverja breytingu, og <code>brand.md</code> í repo-inu er reglurnar sem texti fyrir fólk og gervigreind. Mappan <code>Marketing/Mikra/Branding/Mikra_Brand_2026</code> á SharePoint er afrit til niðurhals, ekki vinnusvæði. Breytingar fara í git og byggjast þaðan, aldrei handvirkt.</p>
+  <div style="overflow-x:auto"><table>
+    <thead><tr><th>Mappa</th><th>Innihald</th><th>Til hvers</th></tr></thead>
+    <tbody>
+    <tr><td>01 Logo</td><td>mikra-logo-&lt;sea|white&gt;.svg, -2000.png, -600.png</td><td>Aðallógó, aðeins samþykktir litir. Hvítt með gegnsæjum grunni. Skrárnar innihalda friðhelgað svæði.</td></tr>
+    <tr><td>02 Stacked</td><td>mikra-stacked-&lt;litur&gt;.svg, -1200.png, -400.png</td><td>Ferkantaðir og háir fletir.</td></tr>
+    <tr><td>03 Symbol</td><td>mikra-symbol-&lt;litur&gt;.svg, -1000.png, -256.png; Circle/; Watermark/</td><td>Ikon, avatar, vatnsmerki með innbyggðu gegnsæi.</td></tr>
+    <tr><td>04 Product lockups</td><td>mikra-&lt;mes|cordex|robotics|vision&gt;-&lt;sea|white&gt;</td><td>Vörulínumerki.</td></tr>
+    <tr><td>05 App icons</td><td>mikra-general, mikra-dark, mikra-gray; symbol/ og stacked/</td><td>Vefkerfi, PWA, HMI, Entra-flísar.</td></tr>
+    <tr><td>06 Colours</td><td>palette.css / .scss / .json / .ase / .gpl + litaspjald per lit með 80/60/40/20 % tintum</td><td>Kóði og hönnunartól.</td></tr>
+    <tr><td>07 Backgrounds</td><td>þrjú vatnsmerki (Deep Sea, Ice, Rock Dark), heillitir (SVG + PNG 1920 og 3840)</td><td>Glærur, hero, bás, splash.</td></tr>
+    <tr><td>08 Social and office</td><td>avatar, LinkedIn-borði, link preview, CodeTwo-undirskrift, Word-haus, PowerPoint-sniðmát (Mikra_snidmat.pptx)</td><td>Tilbúið til upphals.</td></tr>
+    <tr><td>09 Source</td><td>SVG, PDF, DXF og Illustrator frumskrár frá hönnuði</td><td>Masterskrár. Aðeins hönnuður breytir. DXF fyrir skurð og gröft.</td></tr>
+    <tr><td>index.html</td><td>Brand-portal með niðurhali</td><td>Forskoðun og niðurhalshnappar á hverri skrá, zip per kafla.</td></tr>
+    <tr><td>Downloads</td><td>zip-pakkar</td><td>Merki, vörulínur, app-ikon, litir, bakgrunnar, social, frumskrár, allt.</td></tr>
+    <tr><td>build.py + brandsite.py</td><td>Python (pillow + resvg-py)</td><td>Endurbyggir allar skrár og index.html úr 09 Source. Nýr litur eða stærð: breyta þar, ekki handvirkt.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="cols" style="margin-top:20px">
+    <div><h4>Reglur um pakkann</h4>
+      <div class="rule"><span class="ok">✓</span><div>Mest 3–4 möppustig. Engar undirmöppur „ný“, „gamalt“, „test“.</div></div>
+      <div class="rule"><span class="ok">✓</span><div>Ný skrá verður til með <code>build.py</code>, ekki með því að exporta úr Illustrator á staðnum.</div></div>
+      <div class="rule"><span class="ok">✓</span><div>Skráarnöfn: <code>mikra-&lt;gerð&gt;-&lt;litur&gt;-&lt;stærð&gt;</code>, lágstafir, bandstrik.</div></div>
+      <div class="rule"><span class="no">✕</span><div>Mikra_logo-mappan (sept. 2025), EAE-prufupakkinn (okt. 2026) og brandsheet með Moss/Salmon eru viðmið og saga, ekki uppspretta.</div></div>
+    </div>
+    <div><h4>Vinnuskjal</h4>
+      <p>Valkostir sem bíða ákvörðunar, tilboð birgja, vefforskrift með CSS-tokens og opin atriði eru í <a href="Vinnuskjal.html">Vinnuskjal.html</a>, innanhúss. Guide-inn sjálfur er reglurnar og eitt dæmi um hvert.</p>
+    </div>
+  </div>
+</div></section>
+</main>
+</div>
