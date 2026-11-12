@@ -217,7 +217,7 @@ def build_logos():
     for c in LOGO_COLOURS: out_svg_png(f, f"mikra-stacked-{c}", stacked_svg(c), (1200, 400))
     f = ROOT / "03 Symbol"; clean(f)
     for c in LOGO_COLOURS: out_svg_png(f, f"mikra-symbol-{c}", symbol_svg(c), (1000, 256))
-    for bg, fg in [("sea", "white"), ("white", "sea"), ("deep-sea", "white"), ("rock-dark", "ice"), ("rock", "white")]:
+    for bg, fg in [("sea", "white"), ("white", "sea"), ("deep-sea", "white"), ("rock-dark", "white"), ("rock", "white")]:
         out_svg_png(f / "Circle", f"mikra-symbol-circle-{bg}-{fg}", circle_svg(bg, fg), (1000, 256))
     # watermark overlays: transparent symbol at the brand opacities, to lay over any surface
     wm = f / "Watermark"; wm.mkdir()
@@ -240,7 +240,7 @@ def build_logos():
             out_svg_png(f, f"mikra-{p}-{tag}", lockup_svg(p, lc, wc), (2000, 600))
 
 # ---------------------------------------------------------------- 05 app icons
-ICON_SETS = {"mikra-general": ("sea", "white"), "mikra-dark": ("rock-dark", "ice"), "mikra-gray": ("rock", "white")}
+ICON_SETS = {"mikra-general": ("sea", "white"), "mikra-dark": ("rock-dark", "white"), "mikra-gray": ("rock", "white")}
 
 def build_icons():
     root = ROOT / "05 App icons"; clean(root)
@@ -347,7 +347,7 @@ def place(inner_svg, W, H, box, align="center"):
 
 def build_social():
     f = ROOT / "08 Social and office"; clean(f)
-    for bg, fg in [("sea", "white"), ("deep-sea", "white"), ("rock-dark", "ice")]:
+    for bg, fg in [("sea", "white"), ("deep-sea", "white"), ("rock-dark", "white")]:
         write(f / f"avatar-400-{bg}.png", png_bytes(circle_svg(bg, fg), width=400))
         write(f / f"avatar-400-{bg}-square.png", png_bytes(tile_svg(bg, fg, "symbol", radius=False, size=400), width=400))
     # LinkedIn banner 1584x396: deep sea watermark, white logo right, left third clear for the avatar

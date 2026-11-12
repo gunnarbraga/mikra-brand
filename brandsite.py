@@ -125,7 +125,7 @@ def build_site(palette_rows, stamp):
     circles = "".join(card(f"Hringur · {lab}", note, f"03 Symbol/Circle/mikra-symbol-circle-{k}-256.png",
                            [("SVG", f"03 Symbol/Circle/mikra-symbol-circle-{k}.svg"), ("PNG 1000", f"03 Symbol/Circle/mikra-symbol-circle-{k}-1000.png")], dark=k.startswith("white"))
                       for k, lab, note in [("sea-white", "Sea / hvítt", "Sjálfgefinn avatar."), ("white-sea", "hvítt / Sea", "Á lituðum grunni."), ("deep-sea-white", "Deep Sea / hvítt", "Rólegri avatar."),
-                                           ("rock-dark-ice", "Rock Dark / Ice", "OMS app-ikon."), ("rock-white", "Rock / hvítt", "Sandbox, prófun.")])
+                                           ("rock-dark-white", "Rock Dark / hvítt", "OMS app-ikon."), ("rock-white", "Rock / hvítt", "Sandbox, prófun.")])
     wms = "".join(card(f"Vatnsmerki · {lab}", note, f"03 Symbol/Watermark/mikra-watermark-{k}-3840.png",
                        [("SVG", f"03 Symbol/Watermark/mikra-watermark-{k}.svg"), ("PNG 3840", f"03 Symbol/Watermark/mikra-watermark-{k}-3840.png")], dark=d)
                   for k, lab, note, d in [("white-8", "hvítt 8 %", "Á Deep Sea, Sea, Rock Dark og dökkum myndum.", True), ("sky-35", "Sky 35 %", "Á Ice og hvítu.", False), ("sea-10", "Sea 10 %", "Á hvítu, blær af bláu.", False)])
